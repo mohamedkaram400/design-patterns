@@ -1,25 +1,24 @@
 <?php
 
+require_once __DIR__ . '/../../../vendor/autoload.php';
+
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\Models\Car;
+use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\BENZCarBuilder;
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\CarBuilderInterface;
 
 class CarProvider
 {
-    /**
-     * @var CarBuilderInterface $builder
-     */
-    private $builder;
-    public function __construct(CarBuilderInterface $builder)
+    public function construct(CarBuilderInterface $builder): Car
     {
-        $this->builder = $builder;
-    }
-    public function provideCar(): Car
-    {
-        $this->builder->createCar();
-        $this->builder->addBody();
-        $this->builder->addDoors();
-        $this->builder->addEngine();
-        $this->builder->addWhool();
-        return $this->builder->getCar();
+        $builder->createCar();
+        $builder->addBody();
+        $builder->addDoors();
+        $builder->addEngine();
+        $builder->addWhool();
+        return $builder->getCar();
     }
 }
+
+$builder = new BENZCarBuilder();
+$director = new CarProvider();
+$director->construct($builder);

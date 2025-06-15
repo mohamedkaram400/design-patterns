@@ -1,5 +1,6 @@
-
 <?php
+
+namespace MohamedKaram\DesignPatterns\CreationalPatterns\Builder;
 
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\Models\Car;
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\Models\BENZCar;
@@ -8,7 +9,6 @@ use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\CarBuilderInterface;
 class BENZCarBuilder implements CarBuilderInterface
 {
     /**
-     * Summary of type
      * @var Car $type
      */
     private $type;
