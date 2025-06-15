@@ -1,0 +1,15 @@
+{
+    "name": "mohamed-karam/design_patterns",
+    "autoload": {
+        "psr-4": {
+            "MohamedKaram\\DesignPatterns\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed karam",
+            "email": "karam@gmail.com"
+        }
+    ],
+    "require": {}
+}
