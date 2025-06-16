@@ -1,6 +1,8 @@
 <?php
+namespace MohamedKaram\DesignPatterns\CreationalPatterns\Builder;
 
 require_once __DIR__ . '/../../../vendor/autoload.php';
+
 
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\Models\Car;
 use MohamedKaram\DesignPatterns\CreationalPatterns\Builder\BMWCarBuilder;
