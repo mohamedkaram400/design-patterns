@@ -42,4 +42,4 @@ $processor = new PaymentProcessor();
 $processor->setStrategy($strategy);
 
 $response = $processor->process($paymentRequest);
-echo $response;
+echo $response; 
