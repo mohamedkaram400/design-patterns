@@ -1,14 +1,15 @@
 <?php
 
-namespace MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy;
+namespace MohamedKaram\DesignPatterns\tests;
 
 use InvalidArgumentException;
 use MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy\Context;
+use MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy\PaymentProcessor;
 use MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy\ConcreteOneStrategie;
 use MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy\ConcreteStrategyFactory;
 use MohamedKaram\DesignPatterns\BehavioralPatterns\Strategy\Requests\PaymentRequest;
 
-require_once __DIR__ . '/../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 
 // function clientCode(string $type, $context)
