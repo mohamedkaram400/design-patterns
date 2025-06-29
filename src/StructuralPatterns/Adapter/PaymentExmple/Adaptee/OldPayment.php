@@ -1,5 +1,5 @@
 <?php
-namespace MohamedKaram\DesignPatterns\StructuralPatterns\Adapter\Adaptee;
+namespace MohamedKaram\DesignPatterns\StructuralPatterns\Adapter\PaymentExmple\Adaptee;
 
 class OldPayment
 {
