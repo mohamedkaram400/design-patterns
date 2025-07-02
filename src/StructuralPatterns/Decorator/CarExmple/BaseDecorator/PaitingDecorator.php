@@ -1,8 +1,8 @@
 <?php
 
-namespace MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple;
+namespace MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple\BaseDecorator;
 
-use MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple\Car;
+use MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple\DecorateObject\Car;
 use MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple\Interfaces\PaintingInterface;
 
 
@@ -18,7 +18,7 @@ class PaitingDecorator implements PaintingInterface
         $this->painting = $painting;
     }
 
-    public function paint(Car $car)
+    public function paint(Car $car): Car
     {
         return $this->painting->paint($car);
     }

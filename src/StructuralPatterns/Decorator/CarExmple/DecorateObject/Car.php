@@ -1,6 +1,6 @@
 <?php
 
-namespace MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple;
+namespace MohamedKaram\DesignPatterns\StructuralPatterns\Decorator\CarExmple\DecorateObject;
 
 
 class Car
